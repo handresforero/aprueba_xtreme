@@ -1,0 +1,4 @@
+$limpiar archovos temporales
+%temp%
+temp
+prefetch
