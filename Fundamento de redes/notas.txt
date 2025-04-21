@@ -1,0 +1,106 @@
+Bridge: 
+Funciona en la capa 2 (nivel de enlace de datos)
+Conecta segmentos de red formando un sola subred, permite conexión entre equipos sin necesidad de  routers
+Funciona através de una tabla de direcciones MAC
+Brige va conectado al hub
+
+La clasificación es Transparente (no requiere configuración) y NO transparente (necesita que la trama lleve configuración sobre el modo que va a ser reexpedida)
+
+Locales son dos o más segemenos de red
+Remotos son dos partas cada una conectada por un segmento de red y las dos partes s eunen a través de línea WAN
+
+Tabla MAC:
+Serie de direccones únicas para cada equipo
+
+BROUTER
+mejorar la conexión de internet en casa
+Se activa por medio del navegador (dirección ip por la que entra el navegador)
+La dirección ip normalente son 4 npumeros 192.168.0.0
+
+WAP punto de acceso inhalambrico (Wireless Access Point)
+
+Access Point de Raíz se concecta directamente a red cableada LAN. Porpociona punto de conexión inhalámbrico
+
+Acces Point Repetidor : Sele conocce como extención de malla
+
+Puentes de grupo de trabajo: se asocian a otros acces Point como clientes, propocionado conexiones por Ethernet
+
+El concetrador se conoce como HUB
+
+Unidad central de red 100% inhalámbrica
+
+Protocolos de red
+Conjunto de reglas conformado por procedimientos, restricicones y formatos que definen el intercambio de paquetes de infomración para lograr comunicacón entre 2 servidores
+Tiene mecanismos para que los dispositivos se identifiquen y establezcan conexiones entre si
+son reglas d formato que especifica como se forman los paquetes y los datos en los mensajes enviados
+
+###########################################
+Forma de transmisión de datos
+Unicast: La comunicación se establece entre dos nodos
+Multicast: La información se envia de un nodo a mutlliple nodos Ej: IRC (Internet Relay chat)
+Broadcast: Un nodo transmite a todos los nodos de la red, los receptores no son visibles ni el emisor conoce las deirecciones de cada uno
+
+Los protocolos más usados son TCP/IP y OSI
+
+##############################################}
+Modelo OSI (Open System Interconection)
+Cuenta con 7 capas
+1. Nivel físico (Señal y transmisión binaria)
+2. Nivel de enlace de datos (Direcconamiento Físico MAC y LLC)
+3. Nivel de red (Determinbación de ruta e IP, direccionamiento lógico)
+4. Nivel de transporte (Conexión de extremo a extremo y fiabilidad de datos)
+    LISTEN: Se bloquea hasta que un proceso intenta el contacto
+    CONNECT: Intetna activamente concetrador
+    SEND: Envia información
+    RECIVE: Se bloquea asta que llega una TPDU de datos
+    DISCONECT
+    Elementos: Direccionamiento, Establecimeinto de conexión, liberación de conexión (simétrica y asimétrica (teléfono))
+    Control de flujo y almacenamieto en Buffer
+    U buffer es un almacenaieto temporal. Existen 3 tipos de buffer
+    Multiplexión
+    Transporte de internet:
+        UDP: Protocolo de Datagrama de Usuario
+        TCP: Protocolo de Control de Trasmisión
+    Orientación de conexión:
+        Datagramas: Cada paquete se encamina independientemente sin que orgen y destino pasen por establecimeinto de counicación previo
+        Circuitos virutales
+    Tipos de servicio:
+        No Orientados a la conexión CLNS (Cada paquete lleva la dirección de destino y cada nodo decide el camino)
+        Orientados a la conexión CONS el primer paquete lleva destino y se establece ruta
+
+    
+5. Nivel de sesión (Comunicación entre dispositivos de la red)
+    Maneja la conversación entre dispotivo y remoto (servidor)
+    Controla la seguridad con cieres de sesión
+    Control de diálogo simultáneo edn dos sentidos full-duplex o alernado half-duplex
+    Agrupamiento: Se puede marcar para definir grupo de datos
+    RCP (Remote Call Protocol)
+    SCP (Secure Copy)
+6. Nivel de presentación (Representación de los datos)
+    Es la que descifra la información, comrprime la información y la cifra
+    Formatea, cifra y comprime
+    El formateo de datos se hace con códico ampliado de arateres decimal codificdos en binario (EBCDIC) para representar los caracteres en pantalla
+    Código Americano normalizado para intercabio de info ASCII, es representado por números
+    El cifrado de datos protege la información durante la transmisión
+7. Nivel de aplicación (Servicios de red y aplicaciones)
+    FTP (File Tranfer Protocol)
+    DNS (Domain Name Server)
+    DHCP (Dynamic Host configuration Protocol)
+    HTTP (Hyper Text Tranfer Protocol)
+    HTTPS (Hyper Text Transfe Protocol Secure)
+    POP (Post Office Protocol) para recuperación de correo electrónico
+    SMTP (Simple Mail Tranfer Protocol)
+    SSH (Secure Shell)
+    TELNET ()para acceder a equipos remotos
+    TFTP (Trivial File Trasnfer Protocol)
+    LDAP (Lightweight Directory Transfer Protocol)
+    XMPP (Extensive Messaging and Presence Protocol) estándar para mensajería isntantanea
+8. Error capa 8
+
+Modelo TCP/IP 
+Tiene 4 capas diferenciasdas perso se combian las fucniones en las 7 del modelo OSI
+
+
+Cifrado simétrico: Única clave para cifrar y decifrar
+Cifrado simétrico: para cifrar se usa clave pública y para descifrar la privada
+sniffer es código malicioso que está pendiete de extraer info de los paquetes de datos
